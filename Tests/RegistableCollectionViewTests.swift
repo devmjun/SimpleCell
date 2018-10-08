@@ -7,8 +7,7 @@
 //
 
 import XCTest
-@testable import SimpleCell
-
+import SimpleCell
 
 class RegistableCollectionViewTests: XCTestCase {
     var collectionViewController: UICollectionViewController?

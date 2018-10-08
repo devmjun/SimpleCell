@@ -13,7 +13,7 @@
 		04147AEE216B779700AA79BA /* RegistableCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04147AED216B779700AA79BA /* RegistableCollectionViewTests.swift */; };
 		04147AF0216B783B00AA79BA /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04147AEF216B783B00AA79BA /* TestCollectionViewController.swift */; };
 		04E9D2E72167B295006C50B4 /* RegistrableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9D2E52167B295006C50B4 /* RegistrableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04E9D2EE2167B2CD006C50B4 /* RegistrableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9D2ED2167B2CD006C50B4 /* RegistrableTableViewCell.swift */; };
+		04E9D2EE2167B2CD006C50B4 /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9D2ED2167B2CD006C50B4 /* SimpleTableViewCell.swift */; };
 		04E9D2F02167B433006C50B4 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9D2EF2167B433006C50B4 /* CellType.swift */; };
 		04E9D2F22167B463006C50B4 /* RegistrableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9D2F12167B463006C50B4 /* RegistrableCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 		04E9D2E22167B295006C50B4 /* SimpleCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E9D2E52167B295006C50B4 /* RegistrableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrableCell.h; sourceTree = "<group>"; };
 		04E9D2E62167B295006C50B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04E9D2ED2167B2CD006C50B4 /* RegistrableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrableTableViewCell.swift; sourceTree = "<group>"; };
+		04E9D2ED2167B2CD006C50B4 /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
 		04E9D2EF2167B433006C50B4 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		04E9D2F12167B463006C50B4 /* RegistrableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrableCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 				04E9D2E62167B295006C50B4 /* Info.plist */,
 				04E9D2E52167B295006C50B4 /* RegistrableCell.h */,
 				04E9D2EF2167B433006C50B4 /* CellType.swift */,
-				04E9D2ED2167B2CD006C50B4 /* RegistrableTableViewCell.swift */,
+				04E9D2ED2167B2CD006C50B4 /* SimpleTableViewCell.swift */,
 				04E9D2F12167B463006C50B4 /* RegistrableCollectionViewCell.swift */,
 			);
 			path = Sources;
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E9D2EE2167B2CD006C50B4 /* RegistrableTableViewCell.swift in Sources */,
+				04E9D2EE2167B2CD006C50B4 /* SimpleTableViewCell.swift in Sources */,
 				04E9D2F22167B463006C50B4 /* RegistrableCollectionViewCell.swift in Sources */,
 				04E9D2F02167B433006C50B4 /* CellType.swift in Sources */,
 			);
