@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SimpleCell
+@testable import SimpleCell
 
 
 class RegistableCollectionViewTests: XCTestCase {

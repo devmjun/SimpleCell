@@ -7,7 +7,8 @@
 //
 
 import XCTest
-import SimpleCell
+@testable import SimpleCell
+
 
 
 
