@@ -1,18 +1,15 @@
 Pod::Spec.new do |spec|
-  s.name                  = "SimpleCell"
-  s.version               = "0.1.0"
-  s.summary               = "The SimepleCell is an extension for reuseable CollectionView Cell and TableView Cell"
-
-  s.homepage              = "https://github.com/devmjun/SimepleCell"
-  s.license               = { :type => "MIT", :file => "LICENSE" }
-  s.author                = { "Minjun Ju" => "dev.mjun@gmail.com" }
-
+  spec.name         = "SimpleCell"
+  spec.version      = "0.2.0"
+  spec.summary      = "The Simple Cell is A Swift Extension for Reusable Collection View Cell and Table View Cell"
+  spec.homepage     = "https://github.com/devmjun/simplecell"
   
-  s.source                = { :git => "https://github.com/devmjun/SimepleCell.git", 
-                              :tag => s.version.to_s }
-  s.source_files          = "Sources/**/*"
-  s.exclude_files         = "Sources/**/*.plist"
-  
-  s.ios.deployment_target = "9.0"
-  s.swift_version         = "4.2"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author             = { "devmjun" => "dev.mjun@gmail.com" }
+  spec.source       = { :git => "https://github.com/devmjun/SimpleCell.git", 
+                        :tag => spec.version.to_s }
+  spec.source_files  = "Sources/*"
+  spec.exclude_files = "Sources/*.plist"
+  spec.ios.deployment_target = "8.0"
+  spec.swift_version = "4.2"
 end
