@@ -34,7 +34,7 @@ tableView.register(cell: TableViewCell.self)
 
 // 2. dequeue 
 tableView.dequeue(TableViewCell.self)! 
-or
+// or
 tableView.dequeue(TableViewCell.self, indexPath: indexPath)!
 ```
 
@@ -43,13 +43,13 @@ tableView.dequeue(TableViewCell.self, indexPath: indexPath)!
 ```swift
 // 1. register
 collectionView.register(cell: CollectionViewCell.self)
-or when using supplementary views. 
+// or when using supplementary views. 
 collectionView.register(cell: CollectionReusableView.self, forSupplementaryViewOfKind: .header)
 collectionView.register(cell: CollectionReusableView.self, forSupplementaryViewOfKind: .footer)
 
 // 2. dequeue 
 collectionView.dequeue(CollectionView.self)! 
-or when using supplementary views. 
+// or when using supplementary views. 
 collectionView.dequeue(CollectionReusableHeaderView.self, .header, indexPath: indexPath)!
 collectionView.dequeue(CollectionReusableFooterView.self, .footer, indexPath: indexPath)!
 ```
