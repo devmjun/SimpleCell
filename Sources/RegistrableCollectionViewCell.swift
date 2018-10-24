@@ -46,8 +46,11 @@ public extension UICollectionView {
      Returns a reusable cell object located by its identifier
      */
     func dequeue<Cell>(_ reuseableCell: Cell.Type,
-                       indexPath: IndexPath) -> Cell? where Cell: UICollectionViewCell {
-        return dequeueReusableCell(withReuseIdentifier: reuseableCell.identifier, for: indexPath) as? Cell
+                       indexPath: IndexPath) -> Cell where Cell: UICollectionViewCell {
+            guard let cell = dequeueReusableCell(withReuseIdentifier: reuseableCell.identifier, for: indexPath) as? Cell else {
+                fatalError("Failed to dequeue a cell with identifier \(reuseableCell.identifier) matching type \(Cell.Type.self)")
+            }
+            return cell
     }
     
     /**
@@ -56,9 +59,11 @@ public extension UICollectionView {
     func dequeue<Cell>(_ reuseableSupplementaryView: Cell.Type,
                        _ ofKind: SupplementaryType,
                        _ withReuseIdentifier: String = Cell.identifier,
-                       indexPath: IndexPath) -> Cell? where Cell: UICollectionReusableView {
-        
-        return dequeueReusableSupplementaryView(ofKind: ofKind.identifier, withReuseIdentifier: withReuseIdentifier, for: indexPath) as? Cell
+                       indexPath: IndexPath) -> Cell where Cell: UICollectionReusableView {
+        guard let cell = dequeueReusableSupplementaryView(ofKind: ofKind.identifier, withReuseIdentifier: withReuseIdentifier, for: indexPath) as? Cell else {
+            fatalError("Failed to dequeue a cell with SupplementaryView's identifier \(reuseableSupplementaryView.identifier) and identifier \(Cell.identifier) matching type \(Cell.Type.self)")
+        }
+        return cell
     }
 }
 

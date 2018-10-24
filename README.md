@@ -19,7 +19,7 @@ It can cause a mistake if writing an identifier manually.
 
 ```swift
 tableView.register(cell: TableViewCell.self)
-let cell = tableView.dequeue(TableViewCell.self)!
+let cell = tableView.dequeue(TableViewCell.self)
 ```
 
 an identifier is generated automatically with the same name as its class name.
@@ -33,7 +33,7 @@ an identifier is generated automatically with the same name as its class name.
 tableView.register(cell: TableViewCell.self)
 
 // 2. dequeue 
-tableView.dequeue(TableViewCell.self)! 
+tableView.dequeue(TableViewCell.self)
 // or
 tableView.dequeue(TableViewCell.self, indexPath: indexPath)!
 ```
@@ -48,10 +48,10 @@ collectionView.register(cell: CollectionReusableView.self, forSupplementaryViewO
 collectionView.register(cell: CollectionReusableView.self, forSupplementaryViewOfKind: .footer)
 
 // 2. dequeue 
-collectionView.dequeue(CollectionView.self)! 
+collectionView.dequeue(CollectionView.self)
 // or when using supplementary views. 
-collectionView.dequeue(CollectionReusableHeaderView.self, .header, indexPath: indexPath)!
-collectionView.dequeue(CollectionReusableFooterView.self, .footer, indexPath: indexPath)!
+collectionView.dequeue(CollectionReusableHeaderView.self, .header, indexPath: indexPath)
+collectionView.dequeue(CollectionReusableFooterView.self, .footer, indexPath: indexPath)
 ```
 
 ## Requirements 
@@ -64,7 +64,7 @@ SimpleCell requires iOS 8 or above and is written in Swift 4.2.
 CaseContainer is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your podfile: 
 
 ```ruby
-pod 'SimpleCell', '~> 0.3.0'
+pod 'SimpleCell', '~> 0.4.0'
 ```
 
 And run  `pod install`. 
@@ -81,7 +81,7 @@ $ brew install carthage
 add CaseContainer to your `Cartfile`: 
 
 ```ogdl
-github "devmjun/SimpleCell" ~> 0.3.0
+github "devmjun/SimpleCell" ~> 0.4.0
 ```
 
 And run `carthage update`.

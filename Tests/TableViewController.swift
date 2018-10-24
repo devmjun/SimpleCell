@@ -25,7 +25,7 @@ extension TestTableViewController  {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeue(TestTableViewCell.self)!
+        let cell = tableView.dequeue(TestTableViewCell.self)
         return cell
     }
 }

@@ -26,7 +26,7 @@ final class TestCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeue(TestCollectionViewCell.self, indexPath: indexPath)!
+        let cell = collectionView.dequeue(TestCollectionViewCell.self, indexPath: indexPath)
         cell.backgroundColor = .red 
         return cell
     }
@@ -34,10 +34,10 @@ final class TestCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            let header = collectionView.dequeue(TestCollectionReusableHeaderView.self, .header, indexPath: indexPath)!
+            let header = collectionView.dequeue(TestCollectionReusableHeaderView.self, .header, indexPath: indexPath)
             return header
         case UICollectionView.elementKindSectionFooter:
-            let footer = collectionView.dequeue(TestCollectionReusableFooterView.self, .footer, indexPath: indexPath)!
+            let footer = collectionView.dequeue(TestCollectionReusableFooterView.self, .footer, indexPath: indexPath)
             return footer
         default:
             fatalError()
