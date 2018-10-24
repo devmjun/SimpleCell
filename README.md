@@ -35,7 +35,7 @@ tableView.register(cell: TableViewCell.self)
 // 2. dequeue 
 tableView.dequeue(TableViewCell.self)
 // or
-tableView.dequeue(TableViewCell.self, indexPath: indexPath)!
+tableView.dequeue(TableViewCell.self, indexPath: indexPath)
 ```
 
 ### CollectionView 
