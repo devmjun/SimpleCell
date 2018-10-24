@@ -18,12 +18,18 @@ public extension UITableView {
 }
 
 public extension UITableView {
-    func dequeue<Cell>(_ reuseableCell: Cell.Type) -> Cell? where Cell: UITableViewCell {
-        return dequeueReusableCell(withIdentifier: reuseableCell.identifier) as? Cell
+    func dequeue<Cell>(_ reuseableCell: Cell.Type) -> Cell where Cell: UITableViewCell {
+        guard let cell = dequeueReusableCell(withIdentifier: reuseableCell.identifier) as? Cell else {
+            fatalError("Failed to dequeue a cell with identifier \(reuseableCell.identifier) matching type \(Cell.Type.self)")
+        }
+        return cell
     }
     
-    func dequeue<Cell>(_ reuseableCell: Cell.Type, indexPath: IndexPath) -> Cell? where Cell: UITableViewCell {
-        return dequeueReusableCell(withIdentifier: reuseableCell.identifier, for: indexPath) as? Cell
+    func dequeue<Cell>(_ reuseableCell: Cell.Type, indexPath: IndexPath) -> Cell where Cell: UITableViewCell {
+        guard let cell = dequeueReusableCell(withIdentifier: reuseableCell.identifier, for: indexPath) as? Cell else {
+            fatalError("Failed to dequeue a cell with identifier \(reuseableCell.identifier) matching type \(Cell.Type.self)")
+        }
+        return cell
     }
 }
 

@@ -31,3 +31,4 @@ class RegistrableCellTests: XCTestCase {
     }
 }
 
+
