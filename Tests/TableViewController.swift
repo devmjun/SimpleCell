@@ -13,16 +13,23 @@ final class TestTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.register(cell: TestTableViewCell.self)
+        tableView.register(headerFooter: TestHeaderFooter.self)
     }
 }
 
 extension TestTableViewController  {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 30
+        return 1
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return tableView.dequeue(TestHeaderFooter.self)
+    }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(TestTableViewCell.self)
@@ -31,3 +38,4 @@ extension TestTableViewController  {
 }
 
 class TestTableViewCell: UITableViewCell { }
+class TestHeaderFooter: UITableViewHeaderFooterView { }
