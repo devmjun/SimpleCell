@@ -11,11 +11,15 @@ import UIKit
 extension UITableViewCell: CellType { }
 // TableView
 public extension UITableView {
+    /**
+     Registers a class for use in creating new table cells
+     */
     func register<Cell>(cell: Cell.Type,
                         forCellReuseIdentifier reuseIdentifier: String = Cell.identifier) where Cell: UITableViewCell {
         register(cell, forCellReuseIdentifier: reuseIdentifier)
     }
 }
+
 
 public extension UITableView {
     func dequeue<Cell>(_ reuseableCell: Cell.Type) -> Cell where Cell: UITableViewCell {

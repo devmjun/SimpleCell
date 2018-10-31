@@ -12,6 +12,7 @@
 		04147AEC216B6F7800AA79BA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04147AEB216B6F7800AA79BA /* TableViewController.swift */; };
 		04147AEE216B779700AA79BA /* RegistableCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04147AED216B779700AA79BA /* RegistableCollectionViewTests.swift */; };
 		04147AF0216B783B00AA79BA /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04147AEF216B783B00AA79BA /* TestCollectionViewController.swift */; };
+		047E59962189E85E00BD2810 /* SimpleTableViewHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E59952189E85E00BD2810 /* SimpleTableViewHeaderFooter.swift */; };
 		04E9D2E72167B295006C50B4 /* RegistrableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9D2E52167B295006C50B4 /* RegistrableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E9D2EE2167B2CD006C50B4 /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9D2ED2167B2CD006C50B4 /* SimpleTableViewCell.swift */; };
 		04E9D2F02167B433006C50B4 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9D2EF2167B433006C50B4 /* CellType.swift */; };
@@ -35,6 +36,7 @@
 		04147AEB216B6F7800AA79BA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		04147AED216B779700AA79BA /* RegistableCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistableCollectionViewTests.swift; sourceTree = "<group>"; };
 		04147AEF216B783B00AA79BA /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
+		047E59952189E85E00BD2810 /* SimpleTableViewHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewHeaderFooter.swift; sourceTree = "<group>"; };
 		04E9D2E22167B295006C50B4 /* SimpleCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E9D2E52167B295006C50B4 /* RegistrableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrableCell.h; sourceTree = "<group>"; };
 		04E9D2E62167B295006C50B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				04E9D2E52167B295006C50B4 /* RegistrableCell.h */,
 				04E9D2EF2167B433006C50B4 /* CellType.swift */,
 				04E9D2ED2167B2CD006C50B4 /* SimpleTableViewCell.swift */,
+				047E59952189E85E00BD2810 /* SimpleTableViewHeaderFooter.swift */,
 				04E9D2F12167B463006C50B4 /* RegistrableCollectionViewCell.swift */,
 			);
 			path = Sources;
@@ -227,6 +230,7 @@
 				04E9D2EE2167B2CD006C50B4 /* SimpleTableViewCell.swift in Sources */,
 				04E9D2F22167B463006C50B4 /* RegistrableCollectionViewCell.swift in Sources */,
 				04E9D2F02167B433006C50B4 /* CellType.swift in Sources */,
+				047E59962189E85E00BD2810 /* SimpleTableViewHeaderFooter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

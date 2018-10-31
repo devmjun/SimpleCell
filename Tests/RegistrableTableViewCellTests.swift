@@ -29,6 +29,13 @@ class RegistrableCellTests: XCTestCase {
         XCTAssertNotNil(cell)
         XCTAssertEqual(cell?.reuseIdentifier, "TestTableViewCell")
     }
+    
+    func test_IdentifierIsValidWhenRegisteringHeader() {
+        _ = tableViewController?.tableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        let header = tableViewController?.tableView.headerView(forSection: 0)
+        XCTAssertNotNil(header)
+        XCTAssertEqual(header?.reuseIdentifier, "TestHeaderFooter")
+    }
 }
 
 
