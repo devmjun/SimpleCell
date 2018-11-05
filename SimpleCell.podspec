@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "SimpleCell"
-  spec.version      = "0.5.0"
+  spec.version      = "0.6.0"
   spec.summary      = "The Simple Cell is A Swift Extension for Reusable Collection View Cell and Table View Cell"
   spec.homepage     = "https://github.com/devmjun/simplecell"
   
