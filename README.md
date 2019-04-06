@@ -1,4 +1,4 @@
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg) [![Build Status](https://travis-ci.com/devmjun/SimpleCell.svg?branch=master)](https://travis-ci.com/devmjun/SimpleCell) [![pod compatible](https://img.shields.io/cocoapods/v/SimpleCell.svg?style=flat)](https://cocoapods.org/pods/SimpleCell) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![codecov](https://codecov.io/gh/devmjun/SimpleCell/branch/master/graph/badge.svg)](https://codecov.io/gh/devmjun/SimpleCell)
+![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg) [![Build Status](https://travis-ci.com/devmjun/SimpleCell.svg?branch=master)](https://travis-ci.com/devmjun/SimpleCell) [![pod compatible](https://img.shields.io/cocoapods/v/SimpleCell.svg?style=flat)](https://cocoapods.org/pods/SimpleCell) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![codecov](https://codecov.io/gh/devmjun/SimpleCell/branch/master/graph/badge.svg)](https://codecov.io/gh/devmjun/SimpleCell)
 
 # SimpleCell
 
@@ -56,7 +56,7 @@ collectionView.dequeue(CollectionReusableFooterView.self, .footer, indexPath: in
 
 ## Requirements 
 
-SimpleCell requires iOS 8 or above and is written in Swift 4.2.
+SimpleCell requires iOS 8 or above and is written in Swift 5.0
 
 ## Installation
 
